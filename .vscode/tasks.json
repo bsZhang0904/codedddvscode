@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "type": "cppbuild",
+        "label": "Build with g++ 13.2",
+        "command": "E:/mingw-gcc13/bin/g++.exe",
+        "args": [
+          "-std=c++17",
+          "-g",
+          "${file}",
+          "-o",
+          "${fileDirname}/${fileBasenameNoExtension}.exe"
+        ],
+        "options": {
+          "cwd": "${fileDirname}"
+        },
+        "problemMatcher": ["$gcc"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "detail": "Using g++ from WinLibs GCC 13.2"
+      }
+    ]
+  }
+  
